@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+}
+body {
+    background-color: #4bd90f;
+    margin: 0;
+}
+.navtop {
+    background-color: #0dcf10;
+    height: 60px;
+    width: 100%;
+    border: 0;
+}
+.navtop div {
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    height: 100%;
+}
+.navtop div h1, .navtop div a {
+    display: inline-flex;
+    align-items: center;
+}
+.navtop div h1 {
+    flex: 1;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: #eaeced;
+    font-weight: normal;
+}
+.navtop div a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #c1c5ca;
+    font-weight: 500;
+}
+.navtop div a svg {
+    fill: #c1c5ca;
+    margin: 2px 5px 0 0;
+}
+.navtop div a:hover {
+    color: #eaeced;
+}
+.content {
+    width: 900px;
+    margin: 0 auto;
+}
+.content h2 {
+    margin: 0;
+    padding: 25px 0 10px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #474b50;
+}
+.home .create-poll {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    appearance: none;
+    cursor: pointer;
+    border: 0;
+    background: #2873cf;
+    color: #FFFFFF;
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    height: 35px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 6px 1px rgba(45, 54, 68, 0.1);
+}
+.home .create-poll:hover {
+    background: #266cc2;
+}
+.home table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.home table thead {
+    border-bottom: 1px solid #ebedf0;
+}
+.home table thead td {
+    padding: 15px;
+    font-weight: 500;
+    color: #787a7c;
+    font-size: 14px;
+}
+.home table tbody tr {
+    border-bottom: 1px solid #ebedf0;
+}
+.home table tbody tr:nth-child(odd) {
+    background-color: #fafafc;
+}
+.home table tbody tr td {
+    padding: 15px;
+}
+.home table tbody tr td:nth-child(1) {
+    color: #a8aaad;
+}
+.home table tbody tr td .poll-answer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    background-color: #f8eabd;
+    color: #c99f15;
+    border-radius: 15px;
+    margin-right: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.home table tbody tr td.actions {
+    padding: 8px;
+    text-align: right;
+}
+.home table tbody tr td.actions .view, .home table tbody tr td.actions .trash {
+    display: inline-flex;
+    text-align: right;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 7px 9px;
+    border-radius: 5px;
+    margin-left: 3px;
+}
+.home table tbody tr td.actions .view svg, .home table tbody tr td.actions .trash svg {
+    fill: #fff;
+}
+.home table tbody tr td.actions .trash {
+    background-color: #b73737;
+}
+.home table tbody tr td.actions .trash:hover {
+    background-color: #a33131;
+}
+.home table tbody tr td.actions .view {
+    background-color: #37b770;
+}
+.home table tbody tr td.actions .view:hover {
+    background-color: #31a364;
+}
+.update form {
+    padding: 15px 0;
+    display: flex;
+    flex-flow: column;
+    width: 400px;
+}
+.update form label {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 0;
+    margin-right: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #474b50;
+}
+.update form input, .update form textarea {
+    padding: 10px;
+    width: 100%;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdee0;
+    border-radius: 5px;
+}
+.update form input::placeholder, .update form textarea::placeholder {
+    color: #999a9e;
+}
+.update form textarea {
+    height: 200px;
+}
+.update form button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    appearance: none;
+    cursor: pointer;
+    border: 0;
+    background: #2873cf;
+    color: #FFFFFF;
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    height: 35px;
+    width: 120px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 6px 1px rgba(45, 54, 68, 0.1);
+}
+.update form button:hover {
+    background: #266cc2;
+}
+.delete .yesno {
+    display: flex;
+}
+.delete .yesno a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    appearance: none;
+    cursor: pointer;
+    border: 0;
+    background: #2873cf;
+    color: #FFFFFF;
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    height: 35px;
+    width: 70px;
+    margin: 10px 10px 10px 0;
+    box-shadow: 0px 0px 6px 1px rgba(45, 54, 68, 0.1);
+}
+.delete .yesno a:hover {
+    background: #266cc2;
+}
+.poll-vote form {
+    display: flex;
+    flex-flow: column;
+}
+.poll-vote form label {
+    padding-bottom: 12px;
+}
+.poll-vote form input[type=radio] {
+    transform: scale(1.1);
+    margin-right: 10px;
+}
+.poll-vote form button, .poll-vote form a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    appearance: none;
+    cursor: pointer;
+    border: 0;
+    background: #2873cf;
+    color: #FFFFFF;
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    height: 35px;
+    width: 120px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 6px 1px rgba(45, 54, 68, 0.1);
+}
+.poll-vote form button:hover, .poll-vote form a:hover {
+    background: #266cc2;
+}
+.poll-vote form a {
+    text-align: center;
+    text-decoration: none;
+    background-color: #37afb7;
+    margin-left: 6px;
+}
+.poll-vote form a:hover {
+    background-color: #319ca3;
+}
+.poll-result .wrapper {
+    display: flex;
+    flex-flow: column;
+}
+.poll-result .wrapper .poll-question {
+    width: 50%;
+    padding-bottom: 7px;
+}
+.poll-result .wrapper .poll-question p {
+    margin: 0;
+    padding: 7px 0;
+}
+.poll-result .wrapper .poll-question p span {
+    font-size: 14px;
+    color: #88898d;
+}
+.poll-result .wrapper .poll-question .result-bar-wrapper {
+    background-color: #f0f3f1;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 340px;
+}
+.poll-result .wrapper .poll-question .result-bar-wrapper .result-bar {
+    display: flex;
+    height: 25px;
+    min-width: 30px;
+    background-color: #2bb86c;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
